@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STG/PP - Danger</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="sketch_danger.js" type="text/javascript"></script>
+  <script src="textures.js" type="text/javascript"></script>
+  <script src="update.js" type="text/javascript"></script>
+
+  <script src="1obj_danger.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="sec">
+    <div class="controlCoupling1">
+      <textarea id="inputText" rows=5 oninput="setText(this.value)"></textarea>
+    </div>
+  
+    <div class="controlCoupling1">
+      <select name="fontChange" id="fontChange" onchange="setFont(this.value)">
+        <option value="0" selected="selected">Neue Machina - Regular</option>
+        <option value="1">Neue World - SuperCondensedLight</option>
+        <option value="2">Formula Condensed - Regular</option>
+        <option value="3">Neue Montreal - Bold</option>
+      </select>
+    </div>
+
+    <div class="controlCoupling1">
+      <p>Tumult Angle</p>
+      <input type="range" min="1" max="100" value="50" id="tumultAng" oninput="setTumultAng(this.value)">
+    </div>
+
+    <div class="controlCoupling1">
+      <p>Tumult Amplitude</p>
+      <input type="range" min="1" max="100" value="50" id="tumultAmp" oninput="setTumultAmp(this.value)">
+    </div>
+  </div>
+</body>
+
+</html>
